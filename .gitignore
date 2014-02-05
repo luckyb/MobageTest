@@ -2,3 +2,4 @@
 *.apk
 /Unity/Temp/
 /Unity/Library/
+/Unity/MobageNDK/logs/MobagePostProcess-android-log.txt
