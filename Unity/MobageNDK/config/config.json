@@ -1,0 +1,31 @@
+{"_":
+["      Update this file to use the correct settings for your app.          ",
+"       See the Programming Guide for more information.                     "],
+
+
+	"android": {
+		"packageName":"com.mobage.ww.a1367.Please_Stay_Calm_Android",
+		"keyStorePath":"./Assets/Plugins/Android/sandbox.keystore",
+		"keyStoreAlias":"ndkdev",
+		"keyStorePass":"ndkdev",
+		"facebook": {
+		            "FacebookAppID":"180566588646375"
+		},
+		"useAdTracking":true,
+		"adTrackingFilename":"strings.xml"
+	},
+	"ios": {
+		"bundleID":"my.package.name.ios",
+		"appID":"MyAppId",
+		"facebook": {
+			"useFacebookFramework":true,
+			"FacebookAppID":"180566588646375",
+			"FacebookDisplayName":"FacebookDisplayName"
+		},
+		"plistExtras": {
+			
+		},
+		"useAdTracking":false
+	}
+}
+
