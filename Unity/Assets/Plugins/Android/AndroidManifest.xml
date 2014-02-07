@@ -32,6 +32,50 @@
 		<meta-data android:value="@string/facebookApplicationId" android:name="com.facebook.sdk.ApplicationId"/>
 		<activity android:name="com.facebook.LoginActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
 		<service android:name="postprocessor.replaces.this.android.analytics.HeartbeatService"/>
+        <activity android:name="com.helpshift.HSConversation"
+        android:label="@string/hs__conversation_header"
+        android:configChanges="orientation|screenSize"
+        android:theme="@style/Theme.Helpshift"/>
+        <activity android:name="com.helpshift.HSQuestionsList"
+        android:theme="@style/Theme.Helpshift"
+        android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.helpshift.HSQuestion"
+        android:label="@string/hs__question_header"
+        android:hardwareAccelerated="true"
+        android:configChanges="orientation|screenSize"
+        android:theme="@style/Theme.Helpshift" />
+        <activity android:name="com.helpshift.HSSection"
+        android:hardwareAccelerated="true"
+        android:configChanges="orientation|screenSize"
+        android:windowSoftInputMode="adjustPan"
+        android:theme="@style/Theme.Helpshift" />
+        <activity android:name="com.helpshift.HSFaqs"
+        android:label="@string/hs__help_header"
+        android:hardwareAccelerated="true"
+        android:configChanges="orientation|screenSize"
+        android:windowSoftInputMode="adjustPan"
+        android:theme="@style/Theme.Helpshift" />
+        <activity android:name="com.helpshift.HSReview"
+        android:configChanges="orientation|screenSize"
+        android:launchMode= "singleTask"
+        android:theme="@style/Theme.Helpshift.Translucent" />
+        
+        <service
+            android:name="com.helpshift.HSService"
+            android:label="Helpshift Service"
+            >
+        </service>
+        
+        <receiver android:name="com.helpshift.HelpshiftConnReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        
+        <service
+            android:name="com.helpshift.HSRetryService"
+            android:label="Helpshift Service">
+        </service>
 	</application>
 	<permission android:name="postprocessor.replaces.this.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
 	<uses-permission android:name="postprocessor.replaces.this.permission.C2D_MESSAGE"/>
