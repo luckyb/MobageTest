@@ -1,1 +1,0 @@
-./Assets/Editor/PostprocessBuildPlayer_Mobage "/Users/luckyb/Repos/MobageTest/TestBuild.apk" "android" "" "DefaultCompany" "MobageTest"
