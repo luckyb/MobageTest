@@ -12,7 +12,7 @@ public class Build : MonoBehaviour
 {
 
     private static string[] scenes = new string[] {
-													"Assets/Scenes/TestScene.unity"
+													"Assets/Scenes/Level-1.unity"
                                                   };
 
 	private static BuildOptions prodBuildOptions = BuildOptions.None | BuildOptions.ShowBuiltPlayer | BuildOptions.AcceptExternalModificationsToPlayer;
@@ -130,9 +130,9 @@ public class Build : MonoBehaviour
 
 		proc.FileName = "bash";
         proc.Arguments = AppInfo.getAppPath + "/Assets/External/HSBuild/Editor/build.sh " + AppInfo.getAppPath
-						+ "/build/" + AppInfo.longName
 						+ " " + AppInfo.longName
-						+ " " + AppInfo.androidHome;
+						+ " " + AppInfo.androidHome
+						+ " " + AppInfo.companyName;
 		Debug.Log(proc.Arguments);
 		proc.RedirectStandardOutput = true;
 		proc.RedirectStandardError = true;

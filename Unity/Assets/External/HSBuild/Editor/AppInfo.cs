@@ -19,14 +19,14 @@ public static class AppInfo
     /// The path of the android sdk.
     /// </summary>
  	public static string androidHome {
-		get {return "~/Downloads/android-sdk-macosx/";}
+		get {return "/Users/rhishikeshjoshi/workspace/android/sdk";}
 	}
 
 	/// <summary>
     /// The path of the unity project.
     /// </summary>
  	public static string getAppPath {
-		get {return "~/Repos/MobageTest/Unity";}
+		get {return "/Users/rhishikeshjoshi/workspace/MobageTest/Unity";}
 	}
 	
     /// <summary>
